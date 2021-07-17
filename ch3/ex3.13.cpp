@@ -12,7 +12,9 @@ int main() {
   vector<int> v4{10};  // 1 element
   vector<int> v5{10, 42}; // 2 elements
   vector<string> v6 {10}; // 1 element
-  vector<string> v7 {10, "hi"}; // 10 elements
+  // Wrong! Should be 10 elements and each of them is empty
+
+  vector<string> v7 {10, "hi"}; // 10 elements 
   
   return 0;
 }
