@@ -1,15 +1,16 @@
 #include <iostream>
+#include <stdbool.h>
 
 int main() {
 
-  int i = 0;
-  //int *p = &i;     // Valid
-  int *p = nullptr;  // Invalid
+  int i = 10;
+  int *p = &i;   // p points to valid object
+  //int *p = nullptr;  // p points to invalid object
 
   if (p)
-    std::cout << "Valid" << std::endl;
+    std::cout << "p points to valid object" << std::endl;
   else
-    std::cout << "Invalid" << std::endl;
+    std::cout << "p points to invalid object" << std::endl;
 
   return 0;
 }
