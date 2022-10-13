@@ -35,6 +35,11 @@ int divide(int a, int b) {
 int main()
 {
   typedef decltype(add) *myFuncP; // get the function type and set as pointer
+  // using myFuncP = int(*)(int, int); // also works
+  // typedef int (*myFuncP)(int, int); // also works
+  // myFuncT *myFuncP;  // not work
+
+  
   vector<myFuncP> v;
 
   v.push_back(add);   // push back the function into the vector
